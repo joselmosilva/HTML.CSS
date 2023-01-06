@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando linkes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+           }
+           a:visited {
+            color:red;
+            
+           }
+           a:hover {
+            color: black;
+            text-decoration: underline;
+           }
+           a:active {
+            color: yellow;
+           }
+           .especial {
+            background-color: rgb(158, 133, 133);
+           }
+           .especial::after {
+            content: "➾";
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+           }
+          .especial::before {
+            content:"➾";
+
+           }
+    </style>
+</head>
+<body>
+    <h1>Linkes nao visitados</h1>
+    <li><a href="https://youtube.com/@joselmosilva3010" target="_blank" rel="external" class="especial">Canal do youtube</a></li>
+    <li><a href="https://yahoo.com.br" target="_blank" rel="external">Email do yahoo</a></li>
+    <li><a href="https://m.Facebook.com/bookmarks/" target="_blank" rel="external">Facebook</a></li>
+
+</body>
+</html>
